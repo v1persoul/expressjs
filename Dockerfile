@@ -1,10 +1,12 @@
 #Escoger imagen de docker para una aplicación Express.js
 FROM smashmex1369/expressjs:v1
 
-# Definir el directorio de trabajo
+# Definir el directorio de trabajo dentro del contenedor
 WORKDIR /app
 
 # Copiar los archivos del proyecto al contenedor
+# El primer . se refiere al directorio actual en el host, y el segundo . es
+# el directorio de trabajo en el contenedor
 COPY . .
 
 # Instalar dependencias necesarias

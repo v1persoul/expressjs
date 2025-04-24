@@ -30,7 +30,8 @@ Este comando:
 Para ejecutar la aplicación en un contenedor Docker, utiliza el siguiente comando:
 
 ```bash
-docker run -it --rm -p 3000:3000 -v $(pwd):/app mi-ejemplo-express
+# docker run -it --rm -p 3000:3000 -v $(pwd):/app mi-ejemplo-express
+docker run -it --rm -p 3000:3000 mi-ejemplo-express
 ```
 
 Este comando:
